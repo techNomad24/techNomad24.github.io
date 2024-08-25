@@ -18,7 +18,7 @@
     "predeploy": "npm run build",
     "deploy": "gh-pages -d build"
   },
-  "homepage": "https://technomad24.github.io",
+  "homepage": "https://techNomad24.github.io",
   "browserslist": {
     "production": [
       ">0.2%",
