@@ -1,0 +1,20 @@
+/* src/components/Projects.css */
+.card {
+    border-radius: 0.5rem; /* Customize card border radius */
+    overflow: hidden; /* Ensure images don't overflow */
+  }
+  
+  .card-img-top {
+    height: 150px; /* Set a fixed height for images */
+    object-fit: cover; /* Ensure images cover the area without distortion */
+  }
+  
+  .card-body {
+    text-align: center; /* Center-align text in card body */
+  }
+  
+  .btn-primary {
+    background-color: #007bff; /* Custom button color */
+    border: none; /* Remove button border */
+  }
+  

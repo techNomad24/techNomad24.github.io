@@ -1,0 +1,18 @@
+/* src/components/Contact.css */
+.card {
+    border-radius: 0.5rem; /* Customize card border radius */
+  }
+  
+  .card-title {
+    font-size: 1.25rem; /* Customize title font size */
+  }
+  
+  .card-text a {
+    color: #007bff; /* Customize link color */
+    text-decoration: none; /* Remove underline from links */
+  }
+  
+  .card-text a:hover {
+    text-decoration: underline; /* Add underline on hover */
+  }
+  

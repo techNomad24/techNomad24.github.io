@@ -1,0 +1,14 @@
+/* src/components/Header.css */
+.card {
+    border-radius: 0.5rem; /* Customize card border radius */
+    background-color: #f8f9fa; /* Light background color */
+  }
+  
+  .card-title {
+    font-size: 2.5rem; /* Customize title font size */
+  }
+  
+  .card-text {
+    font-size: 1.2rem; /* Customize text font size */
+  }
+  
