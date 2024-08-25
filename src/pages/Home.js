@@ -1,17 +1,14 @@
 import React from 'react';
-import Header from '../components/Header';
-import Links from '../components/Links'; // Updated component import
-import Projects  from '../components/Projects';
-import Contact  from '../components/Contact';
-
+import Links from '../components/Links'; // Import Links component
+import Contact from '../components/Contact'; // Import Contact component
+import Projects from '../components/Projects'; // Import Projects component
 
 const Home = () => {
   return (
     <div className="home">
-      <Header />
-      <Links /> {/* Render the updated Links component */}
-      <Projects/>
-      <Contact/>      
+      <Links /> {/* Render Links component */}
+      <Projects /> {/* Render Projects section */}
+      <Contact /> {/* Render Contact section */}
     </div>
   );
 };

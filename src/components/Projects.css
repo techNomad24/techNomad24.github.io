@@ -1,20 +1,23 @@
-/* src/components/Projects.css */
+/* Adjust card size and presentation */
 .card {
-    border-radius: 0.5rem; /* Customize card border radius */
-    overflow: hidden; /* Ensure images don't overflow */
-  }
-  
-  .card-img-top {
-    height: 150px; /* Set a fixed height for images */
-    object-fit: cover; /* Ensure images cover the area without distortion */
+    border: 1px solid #ddd; /* Lighter border for a less prominent look */
+    border-radius: 8px; /* Slightly rounded corners */
+    overflow: hidden; /* Ensure rounded corners apply correctly */
   }
   
   .card-body {
-    text-align: center; /* Center-align text in card body */
+    padding: 1rem; /* Reduce padding inside the card */
   }
   
-  .btn-primary {
-    background-color: #007bff; /* Custom button color */
-    border: none; /* Remove button border */
+  .card-title {
+    font-size: 1.25rem; /* Smaller title font size */
+  }
+  
+  .card-text {
+    font-size: 1rem; /* Smaller text size */
+  }
+  
+  .btn {
+    font-size: 0.875rem; /* Smaller button text */
   }
   

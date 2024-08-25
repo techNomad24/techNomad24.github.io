@@ -1,16 +1,32 @@
 import React from 'react';
-import 'bootstrap/dist/css/bootstrap.min.css'; // Ensure Bootstrap CSS is included
-import './Header.css'; // Optional, for custom styles
+import { Link } from 'react-router-dom';
+import ThemeSwitcher from './ThemeSwitcher'; // Import ThemeSwitcher
 
 const Header = () => {
   return (
     <header className="header">
-      <div className="container">
-        <div className="card text-center p-4">
-          <h1 className="card-title">Welcome to My Portfolio</h1>
-          <p className="card-text">I’m a software engineer passionate about technology and innovation.</p>
+      <nav className="navbar navbar-expand-lg navbar-light">
+        <div className="container">
+          <Link className="navbar-brand" to="/">My Portfolio</Link>
+          <div className="collapse navbar-collapse">
+            <ul className="navbar-nav mr-auto">
+              <li className="nav-item">
+                <Link className="nav-link" to="/curriculum">Curriculum Vitae</Link>
+              </li>
+              <li className="nav-item">
+                <Link className="nav-link" to="/blog">Blog</Link>
+              </li>
+              <li className="nav-item">
+                <Link className="nav-link" to="/financial-update">Financial Update</Link>
+              </li>
+              {/* Add ThemeSwitcher in the header */}
+              <li className="nav-item">
+                <ThemeSwitcher />
+              </li>
+            </ul>
+          </div>
         </div>
-      </div>
+      </nav>
     </header>
   );
 };

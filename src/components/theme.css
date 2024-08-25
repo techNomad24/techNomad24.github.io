@@ -1,0 +1,14 @@
+.theme-switcher {
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 1.5rem; /* Adjust size as needed */
+    padding: 10px;
+    transition: color 0.3s ease;
+  }
+  
+  .theme-switcher:hover {
+    color: #007bff; /* Change color on hover */
+  }
+  

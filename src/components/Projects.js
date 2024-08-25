@@ -1,44 +1,38 @@
 import React from 'react';
-import './Projects.css'; // Optional, for custom styles
 import 'bootstrap/dist/css/bootstrap.min.css'; // Ensure Bootstrap CSS is included
+
+const projectsData = [
+  {
+    title: 'University',
+    description: 'Software Engineering 3 Years.',
+    link: 'https://github.com/yourusername/project-one'
+  },
+  {
+    title: 'Contributing Open Source',
+    description: 'I Want to Start to contribute for FOSS Projects',
+    link: 'https://github.com/yourusername/project-two'
+  },
+  // Add more projects as needed
+];
 
 const Projects = () => {
   return (
-    <section className="projects">
-      <div className="container">
-        <h2 className="my-4">Projects</h2>
-        <div className="row">
-          <div className="col-md-4">
-            <div className="card mb-4">
-              <img src="https://via.placeholder.com/150" className="card-img-top" alt="Project One" />
-              <div className="card-body">
-                <h5 className="card-title">Project One</h5>
-                <p className="card-text">A description of the first project. This project focuses on XYZ technologies and solutions.</p>
-                <a href="https://example.com" className="btn btn-primary" target="_blank" rel="noopener noreferrer">View Project</a>
+    <section id="projects" className="container my-4">
+      <h2 className="mb-4">Projects</h2>
+      <div className="row">
+        {projectsData.map((project, index) => (
+          <div className="col-md-6 col-lg-4 mb-3" key={index}>
+            <div className="card h-100 shadow-sm border-light"> {/* Adjusted card border */}
+              <div className="card-body d-flex flex-column justify-content-between">
+                <h5 className="card-title">{project.title}</h5>
+                <p className="card-text">{project.description}</p>
+                <a href={project.link} className="btn btn-primary btn-sm" target="_blank" rel="noopener noreferrer">
+                  View Project
+                </a>
               </div>
             </div>
           </div>
-          <div className="col-md-4">
-            <div className="card mb-4">
-              <img src="https://via.placeholder.com/150" className="card-img-top" alt="Project Two" />
-              <div className="card-body">
-                <h5 className="card-title">Project Two</h5>
-                <p className="card-text">A description of the second project. This project highlights ABC techniques and results.</p>
-                <a href="https://example.com" className="btn btn-primary" target="_blank" rel="noopener noreferrer">View Project</a>
-              </div>
-            </div>
-          </div>
-          <div className="col-md-4">
-            <div className="card mb-4">
-              <img src="https://via.placeholder.com/150" className="card-img-top" alt="Project Three" />
-              <div className="card-body">
-                <h5 className="card-title">Project Three</h5>
-                <p className="card-text">A description of the third project. This project demonstrates DEF methodologies and achievements.</p>
-                <a href="https://example.com" className="btn btn-primary" target="_blank" rel="noopener noreferrer">View Project</a>
-              </div>
-            </div>
-          </div>
-        </div>
+        ))}
       </div>
     </section>
   );

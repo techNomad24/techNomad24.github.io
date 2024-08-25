@@ -1,12 +1,25 @@
-/* src/index.css */
-body {
+/* Reset some default margins and paddings */
+body, html {
   margin: 0;
-  font-family: Arial, sans-serif;
-  background-color: var(--background-color, #ffffff); /* Fallback to white */
-  color: var(--text-color, #333333); /* Fallback to dark text */
-  transition: background-color 0.3s, color 0.3s;
+  padding: 0;
 }
 
-#root {
-  min-height: 100vh; /* Ensure root takes full height */
+/* Ensure body takes full height */
+html, body {
+  height: 100%;
+  font-family: Arial, sans-serif; /* Choose a font that matches your design */
+  line-height: 1.6;
+}
+
+/* Define a maximum width for content */
+.container {
+  max-width: 1200px; /* Adjust based on your design needs */
+  margin: 0 auto;
+}
+
+/* Global padding and margins */
+body {
+  padding: 20px; /* Adjust padding as needed */
+  background-color: var(--background-color); /* Use CSS variable for theme */
+  color: var(--text-color); /* Use CSS variable for theme */
 }
