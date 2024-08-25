@@ -18,5 +18,5 @@
     "predeploy": "npm run build",
     "deploy": "gh-pages -d build"
   },
-  "homepage": "https://technomad24.github.io/"
+  "homepage": "https://technomad24.github.io/docs"
 }
